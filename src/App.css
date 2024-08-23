@@ -1,0 +1,143 @@
+/* Reseta margens e preenchimentos padrão, define box-sizing e fonte global */
+* {
+  margin: 0; /* Remove a margem padrão dos elementos */
+  padding: 0; /* Remove o preenchimento padrão dos elementos */
+  box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura */
+  font-family: 'Arial', sans-serif; /* Define a fonte padrão do documento */
+}
+
+/* Estiliza o contêiner geral que ocupa toda a tela */
+.container-geral {
+  height: 100vh; /* Define a altura para 100% da altura da viewport */
+  width: 100vw; /* Define a largura para 100% da largura da viewport */
+  display: flex; /* Usa Flexbox para o layout */
+  justify-content: center; /* Centraliza o contêiner interno horizontalmente */
+  align-items: center; /* Centraliza o contêiner interno verticalmente */
+  background: linear-gradient(to bottom right, #ffffff, #87ceeb); /* Gradiente do branco para azul claro */
+}
+
+/* Estiliza o contêiner principal */
+.container {
+  width: 90%; /* Define a largura para 90% da largura do contêiner pai */
+  max-width: 800px; /* Define a largura máxima do contêiner */
+  height: auto; /* Ajusta a altura automaticamente */
+  background: #ffffff; /* Define a cor de fundo como branco */
+  border-radius: 12px; /* Adiciona bordas arredondadas mais suaves */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra mais suave ao redor do contêiner */
+  padding: 20px; /* Adiciona preenchimento interno */
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estiliza o cabeçalho superior */
+.header-top {
+  background-color: #f0f8ff; /* Define a cor de fundo do cabeçalho como um azul muito claro */
+  color: #333; /* Define a cor do texto como escura para contraste */
+  padding: 20px; /* Adiciona preenchimento interno */
+  border-radius: 12px; /* Adiciona bordas arredondadas mais suaves */
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do cabeçalho */
+  font-size: 1.2rem; /* Define um tamanho de fonte maior para melhor legibilidade */
+  font-family:'Lucida Sans'
+}
+
+/* Estiliza o elemento <main> */
+main {
+  display: flex; /* Usa Flexbox para o layout */
+  width: 100%; /* Ocupa toda a largura disponível */
+  justify-content: space-between; /* Distribui espaço igual entre os itens */
+  align-items: flex-start; /* Alinha os itens ao início (topo) */
+  gap: 20px; /* Adiciona espaçamento entre os itens */
+}
+
+/* Estiliza o formulário */
+.form {
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: center; /* Alinha o conteúdo ao centro */
+  align-items: stretch; /* Estica os itens para preencher a largura disponível */
+  width: 50%; /* Ocupa 50% da largura do elemento pai */
+}
+
+/* Estiliza o título dentro do formulário */
+.form h1 {
+  font-size: 1.6rem; /* Define o tamanho da fonte do título */
+  color: #686767; /* Define a cor do texto */
+  margin-bottom: 15px; /* Adiciona espaço abaixo do título */
+  font-family:'Lucida Sans'
+}
+
+/* Estiliza o campo de entrada do formulário */
+.form input {
+  outline: none; /* Remove a borda de foco padrão */
+  padding: 12px; /* Adiciona preenchimento interno */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  border: 1px solid #ccc; /* Define a borda do campo de entrada */
+  border-radius: 6px; /* Adiciona bordas arredondadas */
+  width: 100%; /* Define a largura do campo de entrada */
+  max-width: 400px; /* Define a largura máxima do campo de entrada */
+  margin-bottom: 12px; /* Adiciona espaço abaixo do campo de entrada */
+}
+
+/* Estiliza o botão dentro do formulário */
+.form button {
+  padding: 12px 24px; /* Adiciona preenchimento interno */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 6px; /* Adiciona bordas arredondadas */
+  background-color: #87ceeb; /* Define a cor de fundo do botão como azul */
+  color: #ffffff; /* Define a cor do texto */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+
+/* Estiliza o botão ao passar o cursor sobre ele */
+.form button:hover {
+  background-color: #82acd8; /* Muda a cor de fundo do botão quando o cursor está sobre ele */
+}
+
+/* Estiliza o contêiner de conteúdo */
+.conteudo {
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+  align-items: center; /* Centraliza horizontalmente o conteúdo */
+  width: 50%; /* Ocupa 50% da largura do elemento pai */
+  background: #f0f8ff; /* Define um fundo azul muito claro */
+  border-radius: 12px; /* Adiciona bordas arredondadas */
+  padding: 20px; /* Adiciona preenchimento interno */
+  
+}
+
+/* Estiliza o texto dentro da div .conteudo */
+.conteudo div {
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estiliza a imagem dentro do contêiner de conteúdo */
+.conteudo img {
+  border-radius: 50%; /* Adiciona bordas arredondadas para formar um círculo */
+  width: 120px; /* Define a largura da imagem */
+  height: 120px; /* Define a altura da imagem */
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+  margin-bottom: 10px; /* Adiciona espaço abaixo da imagem */
+  border-style: double;
+  box-shadow: black;
+}
+
+/* Estiliza o título dentro do contêiner de conteúdo */
+.conteudo h1 {
+  font-size: 1.5rem; /* Define o tamanho da fonte do título */
+  color: #333; /* Define a cor do texto */
+  margin-bottom: 8px; /* Adiciona espaço abaixo do título */
+  font-family:'Lucida Sans'
+}
+
+/* Estiliza o parágrafo dentro do contêiner de conteúdo */
+.conteudo p {
+  font-size: 1rem; /* Define o tamanho da fonte do parágrafo */
+  color: #666; /* Define a cor do texto */
+}
