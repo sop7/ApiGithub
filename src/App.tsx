@@ -32,7 +32,7 @@ function App() {
 
         <main>
           <div className="form">
-            <h1>Consumindo Api do GirHub</h1>
+            <h1>Consumindo Api do Github</h1>
             <input type="text" placeholder="Digite o usuário" onChange={(e) => setUsername(e.target.value)}/>
               <button onClick={handelepesquisa}>Consultar</button>
           </div>

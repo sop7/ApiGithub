@@ -125,7 +125,6 @@ main {
   object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
   margin-bottom: 10px; /* Adiciona espaço abaixo da imagem */
   border-style: double;
-  box-shadow: black;
 }
 
 /* Estiliza o título dentro do contêiner de conteúdo */
